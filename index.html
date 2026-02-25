@@ -6,100 +6,60 @@
   <title>Emma Bainbridge</title>
   <meta name="description" content="MRI • Deep Learning • Brain Segmentation" />
   <link rel="icon" href="assets/img/favicon.svg" />
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" as="style" />
-  <link rel="stylesheet" href="assets/css/lookbook.css" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@600&display=swap" as="style"/>
+  <link rel="stylesheet" href="assets/css/site-dark.css" />
 </head>
 <body class="no-js">
-  <a class="skip" href="#main">Skip to content</a>
+  <main id="top" class="wrap" role="main">
+    <h1 class="title">Emma&nbsp;Bainbridge</h1>
+    <p class="tag">MRI · Deep Learning · Brain Segmentation</p>
 
-  <header class="lb-header" role="banner">
-    <nav class="lb-nav" aria-label="Primary">
-      <a class="lb-brand" href="#top">EMMA&nbsp;BAINBRIDGE</a>
-      <button class="lb-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
-      <ul id="menu" class="lb-menu">
-        <li><a href="#about">About</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#teaching">Teaching</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Full-bleed hero (lookbook style) -->
-  <section id="top" class="lb-hero" aria-labelledby="hero-title">
-    <div class="lb-hero-inner">
-      <h1 id="hero-title" class="lb-title">Emma&nbsp;Bainbridge</h1>
-      <p class="lb-sub">MRI • Deep Learning • Brain Segmentation</p>
-      <div class="lb-actions">
-        <a class="lb-btn" href="files/Emma_Bainbridge_CV.pdf">Download CV</a>
-        <a class="lb-link" href="#contact">Contact</a>
-      </div>
+    <div class="keywords">
+      <span>quantitative mri</span>
+      <span>weak supervision</span>
+      <span>self‑training</span>
+      <span>consistency</span>
+      <span>harmonization</span>
+      <span>segmentation</span>
+      <span>clinical workflow</span>
     </div>
-  </section>
 
-  <main id="main" class="lb-main" role="main">
-    <section id="about" class="lb-section">
-      <h2>About</h2>
-      <p>I’m a researcher working on automated brain segmentation in quantitative MRI, focusing on deep learning with minimal reliance on ground‑truth labels and improving clinical workflows.</p>
+    <section class="about">
+      <p>
+        I build data‑efficient methods for automated brain segmentation in quantitative MRI, with a focus on
+        label‑lite training signals and robust multi‑site generalization.
+      </p>
     </section>
 
-    <section id="publications" class="lb-section">
-      <h2>Selected Publications</h2>
-      <ol class="lb-list">
+    <section class="pubs">
+      <ol>
         <li>
           <span class="t">Weak supervision for multi‑site quantitative MRI segmentation</span>
-          <span class="d">Bainbridge E., Doe J., Smith A. · MedIA, 2025</span>
-          <span class="l"><a href="#">PDF</a> · <a href="#">DOI</a> · <a href="#">Code</a></span>
+          <span class="d">Bainbridge E., Doe J., Smith A. — MedIA, 2025</span>
         </li>
         <li>
           <span class="t">Consistency training for label‑efficient neuroimaging</span>
-          <span class="d">Bainbridge E., Chen L., et al. · MICCAI, 2024</span>
-          <span class="l"><a href="#">PDF</a> · <a href="#">DOI</a></span>
+          <span class="d">Bainbridge E., Chen L., et al. — MICCAI, 2024</span>
         </li>
       </ol>
     </section>
 
-    <section id="projects" class="lb-section">
-      <h2>Projects</h2>
-      <div class="lb-grid">
-        <article class="card">
-          <h3>Label‑lite Segmentation</h3>
-          <p>Self‑/semi‑supervised segmentation for quantitative MRI; reduces annotation cost while preserving clinical utility.</p>
-          <p class="meta"><a href="#">Repository</a></p>
-        </article>
-        <article class="card">
-          <h3>qMRI Harmonization</h3>
-          <p>Domain adaptation for multi‑site, multi‑vendor qMRI to improve robustness and generalization.</p>
-          <p class="meta"><a href="#">Preprint</a></p>
-        </article>
-      </div>
-    </section>
-
-    <section id="teaching" class="lb-section">
-      <h2>Teaching</h2>
-      <ul class="lb-bullets">
-        <li>Course Assistant, MRI Physics (2025)</li>
-        <li>Guest Lecture: Weak supervision in medical imaging (2024)</li>
-      </ul>
-    </section>
-
-    <section id="contact" class="lb-section lb-section-last">
-      <h2>Contact</h2>
-      <ul class="lb-contacts">
-        <li>Email: <a href="mailto:emma@example.com">emma@example.com</a></li>
-        <li>Google Scholar: <a href="#">scholar.google.com/…</a></li>
-        <li>GitHub: <a href="https://github.com/emmabainbridge">github.com/emmabainbridge</a></li>
-      </ul>
+    <section class="links" aria-label="subtle footer links">
+      <a href="files/Emma_Bainbridge_CV.pdf">cv</a>
+      <a href="https://www.linkedin.com/in/ebainbridge/" target="_blank" rel="noopener">linkedin</a>
+      <a href="https://scholar.google.com/" target="_blank" rel="noopener">scholar</a>
+      <a href="https://github.com/emmabainbridge" target="_blank" rel="noopener">github</a>
+      <a href="mailto:emma@example.com">email</a>
     </section>
   </main>
 
-  <footer class="lb-footer" role="contentinfo">
-    <small>© <span id="year"></span> Emma Bainbridge</small>
-  </footer>
+  <!-- custom MRI scanner cursor -->
+  <div class="mri-cursor" aria-hidden="true">
+    <div class="mri-ring"></div>
+    <div class="mri-beam"></div>
+    <div class="mri-core"></div>
+  </div>
 
-  <div class="custom-cursor" aria-hidden="true"></div>
-
-  <script src="assets/js/lookbook.js"></script>
+  <script src="assets/js/site-dark.js"></script>
 </body>
 </html>

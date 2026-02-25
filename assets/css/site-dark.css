@@ -1,0 +1,41 @@
+/* Dark, boutique, one-page, itsflores-inspired */
+:root{
+  --bg:#0a0a0a;
+  --ink:#e9e7e6;
+  --muted:#9b9793;
+  --accent:#9bd0ff; /* cool accent for MRI vibe */
+  --maxw: 820px;
+  --pad: clamp(16px, 2.4vw, 28px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0; background:var(--bg); color:var(--ink); font: 16.5px/1.75 "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; cursor:none}
+.no-js body{cursor:auto}
+
+.wrap{min-height:100svh; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:24px; max-width:var(--maxw); padding: 10vh var(--pad); margin:0 auto}
+.title{font-family:"Playfair Display", Georgia, serif; font-weight:600; letter-spacing:.02em; font-size: clamp(42px, 8vw, 84px); line-height:1.04; margin:0}
+.tag{margin:-6px 0 6px; color:var(--muted)}
+
+.keywords{display:flex; flex-wrap:wrap; gap:10px 16px; justify-content:center; opacity:.9}
+.keywords span{border:1px solid #222; color:#cfc9c4; padding:6px 10px; border-radius:999px; background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(0,0,0,.15)); font-size:.92rem}
+
+.about{max-width: 60ch; text-align:center; color:#cfc9c4}
+
+.pubs{max-width: 70ch}
+.pubs ol{list-style:decimal; padding-left:1.2rem; margin:.5rem 0 0}
+.pubs li{margin:.45rem 0}
+.pubs .t{display:block}
+.pubs .d{display:block; color:var(--muted)}
+
+.links{position:fixed; bottom:28px; left:50%; transform:translateX(-50%); display:flex; gap:18px; opacity:.8}
+.links a{color:#bdb7b2; text-decoration:none; font-size:.95rem; border-bottom:1px dotted transparent}
+.links a:hover{color:var(--ink); border-bottom-color:#595551}
+
+/* MRI scanner cursor */
+.mri-cursor{position:fixed; top:0; left:0; width:28px; height:28px; pointer-events:none; z-index:9999; transform:translate(-50%,-50%)}
+.mri-ring{position:absolute; inset:0; border-radius:50%; background:radial-gradient(closest-side, rgba(155,208,255,.22), rgba(155,208,255,.05) 60%, transparent 61%);
+  box-shadow:0 0 22px rgba(155,208,255,.25), inset 0 0 12px rgba(155,208,255,.12)}
+.mri-core{position:absolute; left:50%; top:50%; width:8px; height:8px; transform:translate(-50%,-50%); border-radius:50%; background: #9bd0ff66}
+.mri-beam{position:absolute; left:50%; top:50%; width:2px; height:46px; transform-origin:0 0; transform: rotate(0deg) translate(0, -23px); background: linear-gradient(180deg, #9bd0ff, transparent); mix-blend-mode:screen; opacity:.9}
+
+@media (hover:none){ body{cursor:auto} .mri-cursor{display:none} }
