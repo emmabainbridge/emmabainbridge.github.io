@@ -1,9 +1,9 @@
-/* Dark, boutique, one-page, itsflores-inspired */
+
 :root{
-  --bg:#0a0a0a;
-  --ink:#e9e7e6;
-  --muted:#9b9793;
-  --accent:#9bd0ff; /* cool accent for MRI vibe */
+  --bg:#0a0a0a;      /* page background */
+  --ink:#e9e7e6;     /* primary text */
+  --muted:#a19f9d;   /* secondary text */
+  --accent:#82c6ff;  /* ← light blue accent (pick any # you love) */
   --maxw: 820px;
   --pad: clamp(16px, 2.4vw, 28px);
 }
