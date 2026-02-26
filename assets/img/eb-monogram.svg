@@ -1,11 +1,1 @@
-<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-  <g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
-    <circle cx="32" cy="32" r="18" opacity="0.7"/>
-    <path d="M18 20 H32"/>
-    <path d="M18 32 H32"/>
-    <path d="M18 44 H32"/>
-    <path d="M32 20 H44 C49 20 52 23 52 28 C52 33 49 36 44 36 H32"/>
-    <path d="M32 32 H44 C49 32 52 35 52 40 C52 45 49 48 44 48 H32"/>
-    <circle cx="32" cy="32" r="6" opacity="0.35"/>
-  </g>
-</svg>
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="32" r="18" opacity="0.85"/><path d="M18 20 H33"/><path d="M18 32 H33"/><path d="M18 44 H33"/><path d="M33 20 H44 C49 20 52 23 52 28 C52 33 49 36 44 36 H33"/><path d="M33 32 H44 C49 32 52 35 52 40 C52 45 49 48 44 48 H33"/><circle cx="33" cy="32" r="6" opacity="0.35"/></g></svg>
