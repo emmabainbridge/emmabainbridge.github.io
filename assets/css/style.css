@@ -1,4 +1,3 @@
-/* Minimal, airy aesthetic akin to boutique landing pages */
 :root{
   --bg:#ffffff; --fg:#111111; --muted:#666; --accent:#0e7c86; --line:#eee;
   --maxw: 880px; --pad: clamp(16px, 2vw, 28px);
