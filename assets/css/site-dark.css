@@ -1,9 +1,11 @@
 :root{--bg:#0a0a0a;--ink:#e9e7e6;--muted:#a19f9d;--accent:#82c6ff;--maxw:820px;--pad:clamp(16px,2.4vw,28px)}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font:12px/1.75 "Segoe UI",SegoeUI,"Helvetica Neue",Arial,sans-serif;cursor:none}
+body{margin:0;background:var(--bg);color:var(--ink);font:16.5px/1.75 "Segoe UI",SegoeUI,"Helvetica Neue",Arial,sans-serif;cursor:none}
 .side-visual{position:fixed;inset:0 auto 0 0;width:min(36vw,420px);background:#0d0d0d url('../img/side.jpg') center/cover no-repeat;filter:brightness(.9) contrast(1);box-shadow:1px 0 0 rgba(255,255,255,.05)}
 @media (max-width:980px){.side-visual{display:none}}
+.top-logo{position:fixed;top:22px;right:26px;padding:6px 10px;border:1px solid rgba(255,255,255,.12);border-radius:10px;background:rgba(255,255,255,.06);color:var(--ink);backdrop-filter:blur(6px);z-index:8000;user-select:none}
+.top-logo img{display:block;width:28px;height:28px}
 .wrap{min-height:100svh;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:22px;max-width:var(--maxw);margin:0 auto;padding:10vh var(--pad);position:relative}
 @media (min-width:981px){.wrap{margin-left:clamp(320px,38vw,460px)}}
 .title{font-weight:600;letter-spacing:.02em;font-size:clamp(42px,8vw,84px);line-height:1.04;margin:0}
@@ -20,6 +22,9 @@ body{margin:0;background:var(--bg);color:var(--ink);font:12px/1.75 "Segoe UI",Se
 @media (max-width:680px){.links{left:50%;transform:translateX(-50%);right:auto}}
 .links a{color:#bdb7b2;text-decoration:none;font-size:.95rem;border-bottom:1px dotted transparent}
 .links a:hover{color:var(--ink);border-bottom-color:#595551}
+.scan-toggle{position:fixed;right:28px;bottom:74px;padding:8px 12px;border:1px solid rgba(255,255,255,.18);border-radius:999px;background:rgba(255,255,255,.06);color:var(--ink);font:13px/1 "Segoe UI",SegoeUI,Arial,sans-serif;letter-spacing:.3px;backdrop-filter:blur(6px);cursor:pointer;z-index:8000}
+.scan-toggle:hover{background:rgba(255,255,255,.1)}
+.scan-toggle[aria-pressed="false"]{opacity:.7}
 .mri-cursor{position:fixed;top:0;left:0;width:28px;height:28px;pointer-events:none;z-index:9999;transform:translate(-50%,-50%)}
 .mri-ring{position:absolute;inset:0;border-radius:50%;background:radial-gradient(closest-side,rgba(130,198,255,.22),rgba(130,198,255,.05) 60%,transparent 61%);box-shadow:0 0 22px rgba(130,198,255,.25),inset 0 0 12px rgba(130,198,255,.12)}
 .mri-core{position:absolute;left:50%;top:50%;width:8px;height:8px;transform:translate(-50%,-50%);border-radius:50%;background:#82c6ff66}
